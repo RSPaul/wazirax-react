@@ -1,0 +1,871 @@
+.p2p_wrapper {
+    background: rgb(236, 239, 241);
+    height: 100vh;
+    display: table;
+}
+.p2p_content [class*="col-"] {
+    padding: 0 7px;
+}
+
+.order-book-table tbody.buy tr .filler {
+    background: rgba(35,172,80,.1);
+    right: 0;
+    left: auto;
+}
+.order-book-table tbody.sell tr .filler {
+    background: rgba(241,67,47,.1);
+    left: 0;
+    right: auto;
+}
+.order-book-table tbody tr .filler {
+    position: absolute;
+    height: 30px;
+}
+.order-book-table {
+    background-color: #fff;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    position: relative;
+    table-layout: fixed;
+    float: left;
+}
+.order-book-table--left {
+    left: 0;
+}
+.order-book-table tbody.buy tr td:last-child, .order-book-table tbody.buy tr td:nth-child(2) {
+    color: #23ac50;
+}
+.order-book-table tbody.sell tr td:first-child {
+    color: #f1432f;
+}
+.order-book-table--open, .order-book-table--open thead tr th {
+    width: 50% !important;
+}
+table.table.order-book-table.order-book-table--open {
+    margin-bottom: 0;
+}
+.order-book-table thead tr th {
+    height: 20px;
+    color: #929292;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2 !important;
+    border-bottom: 1px solid #ddd !important;
+    padding: 4px 14px !important;
+    white-space: pre-line;
+    vertical-align: middle !important;
+}
+.order-book-table tbody tr td {
+    font-size: 12px;
+    padding: 6px 14px !important;
+    border: none !important;
+    font-weight: 600;
+    letter-spacing: .4px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    vertical-align: middle !important;
+    white-space: nowrap;
+}
+.order-book-table thead tr th.right {
+    text-align: right;
+}
+.order-book-table tbody.buy tr td {
+    text-align: right;
+}
+.order_book_table {
+    background-color: rgb(247, 250, 252);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    padding: 0px;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+.order_book_table ul.nav.nav-tabs {
+    float: right;
+}
+.order_book_table .right_tabs h3 {
+    float: left;
+    color: rgb(28, 27, 33);
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    text-align: left;
+    font-weight: 400;
+    margin: 0px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+.right_tabs {
+    float: left;
+    width: 100%;
+    background-color: rgb(247, 250, 252);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+.order_book_table ul.nav.nav-tabs li a{
+    border: 0;
+    border-radius: 0 !important;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 8px 12px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgba(28,27,33,.38);
+    text-transform: uppercase;
+    background: transparent;
+    position: relative;
+    border-top: 4px solid transparent;
+}
+.order_book_table ul.nav.nav-tabs li.active a {
+    color: #333;
+    background: #fff;
+    border-bottom: none;
+    border-top: 4px solid #55bd6c;
+}
+section.p2p_content {
+    padding: 60px 10px 0px;
+    width: 100%;
+}
+.order-book-table tbody tr {
+    height: 30px;
+    cursor: pointer;
+}
+.order-book-table tbody.buy tr:hover td {
+    background-color: rgba(34,35,38,.02);
+}
+.order-book-table tbody.sell tr:hover td {
+    background-color: rgba(34,35,38,.02);
+}
+nav.navbar.navbar-inverse.p2p_header {
+    background: #3067f0;
+    min-height: 42px;
+    box-shadow: none;
+    border-bottom: 1px solid #2851b4;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav div {
+    height: 42px;
+   /* box-shadow: none;*/
+    padding: 0px 20px;
+}
+nav.navbar.navbar-inverse.p2p_header .navbar-brand {
+    float: left;
+    height: auto;
+    padding: 3px 25px;
+    font-size: 18px;
+    line-height: 20px;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li {
+    height: 42px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px;
+    border-left: 1px solid rgb(48, 99, 217);
+    position: relative;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li a {
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: transparent !important;
+    padding: 16px 17px;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li:hover a {
+	background: #254eb7 !important;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li.active a {
+	background: #254eb7 !important;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li.active::after {
+	position: absolute;
+	content: "";
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #f9de38;
+	bottom: -1px;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li a p {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.33;
+    margin: 0px;
+}
+nav.navbar.navbar-inverse.p2p_header .navbar-brand img {
+    max-width: 105px;
+    padding-top: 9px;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li a i {
+    color: rgba(255, 255, 255, 0.54);
+    font-size: 18px;
+    padding: 0px 5px 0px 0px;
+}
+nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li a i.fa.fa-mobile {
+    font-size: 24px;
+    padding-right: 8px;
+}
+.order_book_table .right_tabs h3 a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(77, 68, 216);
+}
+.order-book-table--xid tbody.buy tr .overlay, .order-book-table--xid tbody.sell tr .overlay {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+.order-book-table--xid tbody.buy tr .overlay__box, .order-book-table--xid tbody.sell tr .overlay__box {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: -4%;
+    opacity: 0;
+    height: 100%;
+    background: -webkit-gradient(linear,left top,right top,from(rgba(245,248,250,0)),color-stop(10%,hsla(0,0%,100%,.27)));
+    background: -webkit-linear-gradient(left,rgba(245,248,250,0),hsla(0,0%,100%,.27) 10%);
+    background: -o-linear-gradient(left,rgba(245,248,250,0) 0,hsla(0,0%,100%,.27) 10%);
+    background: linear-gradient(90deg,rgba(245,248,250,0) 0,hsla(0,0%,100%,.27) 10%);
+    width: 45%;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    min-width: 150px;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all .2s cubic-bezier(.68,-.55,.265,1.55);
+    -o-transition: all .2s cubic-bezier(.68,-.55,.265,1.55);
+    transition: all .2s cubic-bezier(.68,-.55,.265,1.55);
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+}
+.order-book-table--xid tbody.buy tr .overlay:hover .overlay__box, .order-book-table--xid tbody.sell tr .overlay:hover .overlay__box {
+    right: 0;
+    opacity: 1;
+}
+.dXbGXd {
+    position: relative;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: rgb(244, 67, 54);
+    user-select: none;
+    width: 48px;
+    height: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 4px;
+    outline: 0px;
+    margin: 0px 16px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    position: relative;
+    top: -6px;
+}
+.cvwdwF {
+    position: relative;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: rgb(85, 189, 108);
+    user-select: none;
+    width: 48px;
+    height: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 4px;
+    outline: 0px;
+    margin: 0px 16px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    position: relative;
+    top: -6px;
+}
+.lpmmyf {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    margin: 0px;
+}
+table.order-book-table.order-book-table--xid {
+    width: 100%;
+}
+.order-book-table--xid tbody.buy tr td, .order-book-table--xid tbody.sell tr td {
+    text-align: left;
+}
+.dfBYMX {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    transition: all 0.2s ease-in 0s;
+    border-radius: 0px 0px 4px 4px;
+    float: left;
+    width: 100%;
+}
+.hdXkGz {
+    height: 100%;
+}
+.trade-history {
+    background-color: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+.trade-history thead tr th {
+    height: 20px;
+    color: #929292;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+    border-bottom: 1px solid #ddd;
+    padding: 4px 14px;
+    text-align: center;
+}
+.trade-history tbody>tr.fadeInRed {
+    -webkit-animation: fadeInRed 1s ease-out 1;
+    animation: fadeInRed 1s ease-out 1;
+    background-color: rgba(255,61,0,.2);
+}
+.trade-history tbody>tr {
+    height: 30px;
+}
+.trade-history tbody>tr>td {
+    vertical-align: middle;
+    padding: 2px 4px!important;
+    font-size: 12px;
+    letter-spacing: .4px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: center;
+}
+.trade-history tbody>tr.fadeInRed td:first-child {
+    color: #ff3d00;
+}
+.trade-history tbody>tr>td:nth-child(2) {
+    color: #1c1b21;
+}
+.trade-history tbody>tr>td:last-child {
+    color: #929292;
+}
+.trade-history tbody>tr.fadeInGreen {
+    -webkit-animation: fadeInGreen 1s ease-out 1;
+    animation: fadeInGreen 1s ease-out 1;
+    background-color: rgba(43,205,118,.2);
+}
+.trade-history tbody>tr.fadeInGreen td:first-child {
+    color: #2bcd76;
+}
+.trade-history tbody>tr>td:nth-child(2) {
+    color: #1c1b21;
+}
+.trade-history tbody>tr>td i {
+    padding-right: 5px;
+}
+.order_book_table.open_completed_order ul.nav.nav-tabs {
+    width: 100%;
+}
+.order_book_table.open_completed_order ul.nav.nav-tabs li {
+    width: 50%;
+}
+.order_book_table.open_completed_order ul.nav.nav-tabs li a {
+    text-align: center;
+}
+.uuBqR {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    min-height: 320px;
+    position: relative;
+}
+.bwUeNe {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    user-select: none;
+    width: 192px;
+    height: 44px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 4px;
+    outline: 0px;
+    margin: 0px 0px 8px;
+    background: rgb(0, 200, 83);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.kXHauW {
+    color: rgb(28, 27, 33);
+    font-size: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin: 0px;
+}
+.iMzfdG {
+    position: relative;
+    box-shadow: none;
+    cursor: pointer;
+    user-select: none;
+    width: 192px;
+    height: 44px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgba(38, 50, 56, 0.87);
+    text-align: left;
+    border-radius: 4px;
+    outline: 0px;
+    margin: 8px 0px 0px;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(47, 103, 241);
+    border-image: initial;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.atLqv {
+    color: rgba(38, 50, 56, 0.87);
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    margin: 0px;
+}
+.inner_account_part {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (min-width: 768px) {
+	.funds-p2p {
+	    border: 1px solid rgba(38,50,56,.17);
+	}
+}
+
+
+.funds-p2p {
+    background-color: #fafafa;
+    border-top: 1px solid rgba(38,50,56,.17);
+    border-right: 1px solid rgba(38,50,56,.17);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.funds-p2p-logo {
+	    height: 100%;
+	}
+
+}
+
+.funds-p2p-logo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.funds-p2p-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 16px;
+}
+.funds-p2p-wrapper-title {
+    display: -ms-flexbox;
+    display: flex;
+}
+.funds-p2p-wrapper-title-text {
+    font-size: 18px;
+    font-weight: 700;
+}
+.funds-p2p-wrapper-description {
+    display: -ms-flexbox;
+    display: flex;
+}
+.funds-p2p-wrapper-description-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(34,35,38,.54);
+}
+
+.p2p-illustration {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 14px;
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+}
+.hzJVYn {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+}
+.p2p-illustration-heading-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+.p2p-illustration-heading-subtitle {
+    font-size: 12px;
+    font-weight: 500;
+}
+.p2p-illustration-image {
+    width: 100%;
+    margin: 16px 0 0 auto;
+}
+.hzJVYn:hover {
+    opacity: 0.95;
+    color: rgb(48, 103, 240);
+    text-decoration: none;
+}
+.buy-sell-form {
+    padding: 16px 31px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    background: #fff;
+}
+.buy-sell-form .form-group {
+    margin-bottom: 16px;
+    position: relative;
+}
+.input_plotting {
+	position: relative;
+}
+.buy-sell-form .form-group .label_data {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+}
+.buy-sell-form .form-group .form-control {
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: 600;
+    padding: 10px 20px 10px 70px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.25;
+    -webkit-letter-spacing: .2px;
+    -moz-letter-spacing: .2px;
+    -ms-letter-spacing: .2px;
+    letter-spacing: .2px;
+    border: 1px solid rgba(34,35,38,.12);
+    color: #222326;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    height: 40px;
+    box-shadow: none;
+}
+.buy-sell-form .form-group .form-control:focus {
+    background-color: #fff;
+    border: 1px solid #3067f0;
+    outline: 0;
+    border-radius: 2px;
+    box-shadow: none;
+}
+.buy-sell-form .form-group .label_data p {
+    margin: 0;
+	color: rgba(38, 50, 56, 0.38);
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 400;
+}
+.buy-sell-form .form-group label {
+    color: rgba(38, 50, 56, 0.38);
+    font-size: 10px;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.gfGHah {
+    font-size: 10px;
+    margin-top: 8px;
+    color: rgba(34, 35, 38, 0.54);
+    font-weight: bold;
+    position: absolute;
+    bottom: -16px;
+    right: 16px;
+    margin: 0;
+}
+.place_buy_order {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    background-color: rgb(85, 189, 108);
+    user-select: none;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 4px;
+    outline: 0px;
+    margin: 0px;
+    border-width: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.fGVEHW {
+    color: rgba(34, 35, 38, 0.38);
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    text-align: left;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+}
+.form-group.total_form_group {
+    margin-bottom: 30px;
+}
+.prefered_seller_header {
+    background: #f2f2f9;
+    padding: 7px 26px 7px 16px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    display: table;
+}
+.prefered_seller_header i {
+	margin-right: 5px;
+}
+.prefered_seller_header.opened {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.prefered_seller {
+    margin-bottom: 16px;
+}
+a.how_it_work_prefered {
+	color: rgb(77, 68, 216);
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    padding: 0 20px 16px;
+    font-size: 10px !important;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.how_it_work_prefered i {
+	margin-left: 5px;
+}
+.prefered_seller_body {
+    background-color: #f2f2f9;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    padding: 0px;
+    display: none;
+}
+.prefered_seller_header.opened i {
+    transform: rotate(90deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+.prefered_seller_header i {
+	transition: all 0.5s ease-in-out 0s;
+}
+.prefered_seller_body .form-group {
+    margin-bottom: 0;
+    padding: 10px 20px 0px 20px;
+}
+.prefered_seller_body .form-group .form-control {
+    padding-left: 15px;
+}
+.get_own_username {
+    border-radius: 0 0 4px 4px;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 20px;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.xid-body-username-create {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.xid-body-username-label {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 8px 0 0;
+}
+.xid-body-username-link {
+    cursor: pointer;
+    color: #3067f0;
+    font-size: 12px;
+    border: 1px solid #3067f0;
+    padding: 4px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+.xid-body-username-intro {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 8px 16px 0;
+}
+.xid-body-username-intro-list {
+    margin: 0;
+    opacity: .7;
+    padding: 0px;
+}
+.xid-body-username-intro-list li {
+    font-size: 12px;
+    width: 100%;
+}
+.order_book_table.open_completed_order.form_buy_sell ul.nav.nav-tabs li a {
+    border-width: 2px;
+}
+/*.order_book_table.open_completed_order.form_buy_sell ul.nav.nav-tabs li.active a {
+	border-color: none;
+}*/
+a.sell-active-a {
+	border-color: #f1432f !important;
+}
+.buy-active-a {
+	border-color: #55bd6c !important;
+}
+.sell-active-btn {
+	background-color: #f1432f !important;	
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.order-book-table thead tr th {
+    padding: 4px 10px !important;
+}
+.funds-p2p-logo img {
+    width: 100%;
+}
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .funds-p2p {
+        float: left;
+        width: 100%;
+    }
+    nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li a {
+        padding: 16px 9px;
+    }  
+    nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li a p {
+        font-size: 11px;
+    }
+
+
+
+}
+
+
+@media (max-width: 767px) {
+	.funds-p2p {
+		float: left;
+		width: 100%;
+	}
+	nav.navbar.navbar-inverse.p2p_header .navbar-toggle .icon-bar {
+	    background: #fff;
+	}
+	nav.navbar.navbar-inverse.p2p_header .nav.navbar-nav li a {
+		width: 100%;
+	}
+	section.p2p_content {
+	    padding: 70px 10px 0px;
+	    width: 100%;
+	}
+    .order-book-table thead tr th {
+        padding: 4px 8px !important;
+    }
+
+
+
+}
