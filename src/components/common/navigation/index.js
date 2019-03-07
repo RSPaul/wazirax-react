@@ -4,8 +4,7 @@ class NavigationComponent extends Component {
     render() {
         return (
             <ul className="nav navbar-nav navbar-right">
-                <li>
-                <div><NavLink to= "/">Exchange</NavLink></div>
+                <li><NavLink to= "/"><div><p>Exchange</p></div></NavLink>
                 {/* <a href="#">
                     <div>
                         <p>
@@ -14,8 +13,7 @@ class NavigationComponent extends Component {
                     </div>
                 </a> */}
                 </li>
-                <li>
-                <div><NavLink to="/p2p">P2P</NavLink>    </div>
+                <li><NavLink to="/p2p"><div><p>P2P</p></div></NavLink>
                 {/* <a href="#">
                     <div>
                         <p>
@@ -24,8 +22,7 @@ class NavigationComponent extends Component {
                     </div>
                 </a> */}
                 </li>
-                <li>
-               <div> <NavLink to= "/">Log in</NavLink></div>
+                <li><NavLink to= "/"><div><p>Log in</p></div></NavLink>
                 {/* <a href="#">
                     <div>
                         <p>
@@ -34,8 +31,7 @@ class NavigationComponent extends Component {
                     </div>
                 </a> */}
                 </li>
-                <li className="sign_up">
-                <div> <NavLink to= "/">Sign up</NavLink></div>
+                <li className="sign_up"><NavLink to= "/"><div><p>Sign up</p></div></NavLink>
                 {/* <a href="#">
                     <div>
                         <p>
